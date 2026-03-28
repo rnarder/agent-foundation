@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.2.0 — 2026-03-28
+- Se limpió el scope del framework para alinearlo mejor con su foco post-bootstrap.
+- Se retiraron templates fuera de foco (`SOUL_TEMPLATE`, `USER_TEMPLATE`, `BOOTSTRAP_TEMPLATE`).
+- Se mantuvieron solo templates operativos relevantes (`AGENTS_TEMPLATE`, `ROUTING_TEMPLATE`).
+- Se simplificó el framing para que el repo sea más austero y coherente.
+
 ## v1.1.0 — 2026-03-27
 - Se añadió gobernanza explícita del framework con `PROMOTION_POLICY.md`.
 - Se añadió `NEW_AGENT_ADOPTION.md` para definir cómo instanciar agentes nuevos desde el core.

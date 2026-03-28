@@ -22,7 +22,8 @@ From there, the agent can read this foundation and improve its own operational s
 - verification
 - housekeeping
 - error learning
-- governance and templates
+- governance
+- lightweight operational templates
 
 ## Layout
 Core docs live under `docs/agent-foundation/`.

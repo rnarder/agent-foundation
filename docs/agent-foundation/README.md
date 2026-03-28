@@ -24,7 +24,7 @@ Desde ese punto, el agente puede leer `Agent Foundation` y usarlo para mejorar s
 - housekeeping
 - aprendizaje de errores
 - gobernanza de prácticas
-- guías y templates post-bootstrap
+- templates de apoyo para operación post-bootstrap
 
 ## Estructura
 - `CORE_PRINCIPLES.md` — filosofía operativa reusable
@@ -39,7 +39,8 @@ Desde ese punto, el agente puede leer `Agent Foundation` y usarlo para mejorar s
 - `ROUTING_AND_ISOLATION.md` — separación entre organización visible y aislamiento real
 - `CHANGELOG.md` — evolución del framework
 - `ROADMAP.md` — backlog y mejoras previstas
-- `templates/` — plantillas de apoyo
+- `templates/AGENTS_TEMPLATE.md` — apoyo para reglas operativas
+- `templates/ROUTING_TEMPLATE.md` — apoyo para routing e aislamiento
 
 ## Uso recomendado
 1. Leer este índice
