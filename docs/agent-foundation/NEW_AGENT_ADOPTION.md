@@ -1,10 +1,10 @@
 # New Agent Adoption
 
 ## Objetivo
-Definir cómo usar `Agent Foundation` para crear un agente nuevo sin copiar basura contextual ni perder las prácticas maduras.
+Definir cómo aplicar `Agent Foundation` a un agente nuevo que ya superó el bootstrap inicial y necesita madurar su operación.
 
 ## Momento de adopción
-Este framework entra en juego **después** del estado inicial limpio de OpenClaw.
+Este framework entra en juego cuando el agente ya está funcional y puede empezar a estructurarse mejor.
 
 Precondiciones recomendadas:
 - OpenClaw ya instalado
@@ -13,22 +13,18 @@ Precondiciones recomendadas:
 - bootstrap inicial ya completado
 - primer intercambio usuario/agente ya ocurrido
 
-A partir de ahí, el agente puede leer `Agent Foundation` y adoptarlo como base operativa.
+A partir de ahí, el agente puede leer `Agent Foundation` y usarlo como base operativa post-bootstrap.
 
 ## Orden recomendado
-### 1. Partir del estado limpio existente
-No reinstalar OpenClaw ni rehacer onboarding si ya existe un agente funcional mínimo.
+### 1. Revisar la base
+Leer:
+- `README.md`
+- `CORE_PRINCIPLES.md`
+- `MEMORY_SYSTEM.md`
+- `MODEL_ROUTING.md`
+- `VERIFICATION.md`
 
-### 2. Instanciar base
-Crear o preparar:
-- `AGENTS.md`
-- `SOUL.md`
-- `USER.md`
-- `MEMORY.md`
-- `memory/`
-- docs/routing locales si aplica
-
-### 3. Copiar solo la capa reusable
+### 2. Aplicar la estructura operativa
 Usar desde `Agent Foundation`:
 - principios core
 - sistema de memoria
@@ -37,47 +33,22 @@ Usar desde `Agent Foundation`:
 - verificación
 - housekeeping
 - error learning
-- plantillas
+- plantillas de apoyo
 
-### 4. Personalizar la capa local
-Definir:
-- identidad propia del agente
-- a quién ayuda
-- tono
-- límites
-- objetivos
-- temas y workflows propios
+### 3. Aterrizar en el entorno real
+Definir o completar:
+- routing local
+- herramientas disponibles
+- workflows y límites operativos
+- prácticas de mantenimiento útiles para el host real
 
-### 5. Configurar entorno
-Definir:
-- canales/topics
-- tools disponibles
-- hosts/cron/workflows
-- límites operativos reales
-
-### 6. Validar nacimiento del agente
+### 4. Validar maduración inicial
 Checklist mínimo:
-- ¿tiene identidad propia?
-- ¿tiene memoria separada?
-- ¿no arrastra datos privados de otro agente?
-- ¿sus reglas duraderas ya están en archivos?
+- ¿su memoria operativa está clara?
 - ¿su routing está claro?
+- ¿tiene criterio de verificación?
+- ¿sus prácticas operativas viven en archivos?
 - ¿su entorno real fue probado?
 
-## Qué nunca copiar tal cual
-- memoria privada de otro agente
-- datos personales del usuario de otro agente
-- rutas/hosts/tokens sensibles
-- topics/routing específicos de otro entorno
-- workarounds locales sin validar
-
-## Qué sí conviene copiar
-- estructura mental y operativa
-- disciplina de costes
-- verificación
-- aprendizaje de errores
-- patrones de housekeeping
-- límites de delegación y aislamiento
-
 ## Regla
-Crear un agente nuevo no es clonar uno viejo. Es tomar un agente recién nacido y funcional, aplicarle una base madura, y luego personalizar con intención.
+Aplicar `Agent Foundation` no es rehacer el nacimiento del agente. Es madurar su operación post-bootstrap con una base reusable, clara y durable.

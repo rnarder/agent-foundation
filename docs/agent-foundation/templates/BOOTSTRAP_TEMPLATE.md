@@ -1,11 +1,12 @@
 # BOOTSTRAP.md Template
 
-Purpose: give a newborn agent enough context to start cleanly.
+Purpose: help a newly functional agent transition from initial bootstrap into a more mature operating mode.
 
 Include:
-- who the agent is
-- who they help
-- what files matter first
-- what not to inherit blindly
-- first-run checklist
-- where durable truth should live afterwards
+- what to read first
+- where operational truth should live
+- how to organize memory after bootstrap
+- how to approach verification
+- how to think about routing, delegation, and maintenance
+
+Keep it short, practical, and focused on post-bootstrap maturation.
