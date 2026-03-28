@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.3.0 — 2026-03-28
+- Se añadió `EXTERNAL_PATTERNS_INTAKE.md` para registrar ideas externas antes de tocar el core.
+- Se añadió `INCUBATING_PRACTICES.md` para seguir prácticas en prueba con criterios de promoción/descarte.
+- Se añadió `ADOPTION_FLOW.md` para formalizar el paso de intake → incubación → adopción local → promoción al core o descarte.
+- Se reforzó `ROADMAP.md` con checkpoints de incubación y control de deriva.
+
 ## v1.2.0 — 2026-03-28
 - Se limpió el scope del framework para alinearlo mejor con su foco post-bootstrap.
 - Se retiraron templates fuera de foco (`SOUL_TEMPLATE`, `USER_TEMPLATE`, `BOOTSTRAP_TEMPLATE`).
