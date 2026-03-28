@@ -15,9 +15,9 @@
 - flujo de adopción para nuevos agentes
 - distinción formal entre routing y aislamiento real
 - intake externo y flujo de adopción/descartes
+- progressive disclosure / layered retrieval para memoria
 
 ## Incubando
-- progressive disclosure / layered retrieval
 - context segmentation para tareas largas
 - verification loops más explícitos
 - harness health / scorecard
