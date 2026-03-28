@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.4.0 — 2026-03-28
+- Se adoptó y promovió al core el patrón de **progressive disclosure** para memoria/contexto.
+- `MEMORY_SYSTEM.md` ahora formaliza recuperación por capas: buscar primero, leer fragmentos mínimos y expandir solo si hace falta.
+- `INCUBATING_PRACTICES.md` se actualizó para marcar esta práctica como `adopted-local` y `promoted-core`.
+
 ## v1.3.0 — 2026-03-28
 - Se añadió `EXTERNAL_PATTERNS_INTAKE.md` para registrar ideas externas antes de tocar el core.
 - Se añadió `INCUBATING_PRACTICES.md` para seguir prácticas en prueba con criterios de promoción/descarte.

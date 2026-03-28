@@ -26,12 +26,11 @@ Objetivo: seguir prácticas prometedoras antes de adoptarlas en Bruno o promover
 
 ## 1) Progressive disclosure for memory
 - **Source:** `thedotmack/claude-mem`
-- **Status:** `incubating`
+- **Status:** `promoted-core`, `adopted-local`
 - **Hypothesis:** buscar primero, leer fragmentos mínimos y expandir solo si hace falta reducirá inflación de contexto y mejorará higiene de memoria.
 - **Trial scope:** workflow real de Bruno al consultar memoria/contexto previo antes de responder o actuar.
-- **Promote if:** reduce lecturas innecesarias, mantiene precisión y se puede explicar como regla simple reusable.
-- **Discard if:** añade ceremonia, no cambia decisiones reales o complica demasiado el acceso a memoria.
-- **Next checkpoint:** siguiente revisión de `MEMORY_SYSTEM.md` o siguiente tanda real de trabajo donde la recuperación de contexto sea relevante.
+- **Outcome:** adoptado como principio operativo y promovido a `MEMORY_SYSTEM.md`.
+- **Why promoted:** alto valor, bajo coste, encaje natural con el sistema actual y sin complejidad adicional.
 
 ## 2) Context segmentation for long tasks
 - **Source:** `gsd-build/get-shit-done`

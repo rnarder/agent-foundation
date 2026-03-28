@@ -40,6 +40,25 @@ Tener continuidad útil sin inflación de contexto ni fuga de datos innecesarios
 - Si una práctica deja de servir, moverla o retirarla.
 - Lo reusable no debe quedar enterrado en un diario diario.
 
+## Progressive disclosure
+La memoria debe recuperarse por capas, no volcarse de golpe.
+
+### Patrón recomendado
+1. **Buscar primero**
+   - localizar dónde podría estar el contexto relevante
+2. **Leer fragmentos mínimos**
+   - traer solo las líneas/snippets necesarios para validar o responder
+3. **Expandir solo si hace falta**
+   - si persisten dudas o falta contexto, leer un poco más
+4. **Evitar contexto sobrante**
+   - no cargar memoria de más “por si acaso”
+
+### Objetivo operativo
+- reducir inflación de contexto
+- mantener precisión
+- mejorar coste/claridad
+- traer solo lo necesario para la tarea actual
+
 ## Protocolo mínimo
 ### Antes de responder sobre pasado, decisiones o preferencias
 - buscar memoria primero
@@ -65,3 +84,4 @@ Tener continuidad útil sin inflación de contexto ni fuga de datos innecesarios
 - guardar conversaciones enteras sin destilar
 - responder desde “recuerdo vagamente”
 - mezclar información reusable con datos personales de un agente concreto
+- cargar contexto excesivo antes de comprobar si realmente hace falta
