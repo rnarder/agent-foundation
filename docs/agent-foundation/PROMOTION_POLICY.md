@@ -37,5 +37,42 @@ Una práctica debería entrar al core solo si responde “sí” a casi todo est
 4. Si se repite y demuestra valor, se promueve al core
 5. Si se demuestra local/contextual, se deja fuera del core
 
+## Skillify: niveles de promoción durable
+No toda mejora merece una skill completa. Promover bien significa elegir el nivel mínimo que evita repetir el fallo o perder la capacidad.
+
+### 1. Regla durable
+Usar cuando basta con cambiar comportamiento futuro.
+- ejemplo: regla en `lessons.md`, `AGENTS.md` o doc de operación
+
+### 2. Doc / checklist
+Usar cuando la mejora es un procedimiento humano-agente.
+- ejemplo: verificación antes de cerrar, panorama antes de arquitectura
+
+### 3. Script determinista
+Usar cuando el núcleo es mecánico.
+- ejemplo: watcher, parser, preflight, healthcheck
+
+### 4. Skill operativa
+Usar cuando hace falta routing claro, instrucciones especializadas o combinación de pasos/herramientas.
+- debe tener `SKILL.md`
+- debe describir cuándo usarla y cuándo no
+- idealmente debe apoyarse en scripts/tests si el core es determinista
+
+### 5. Skill + tests + routing + monitoring
+Usar cuando la capacidad es crítica, repetible o propensa a regresiones.
+- tests o smoke checks
+- docs de routing
+- estado/logs si corre en background
+- verificación de que realmente se invoca
+
+## Criterio de nivel mínimo
+Elegir el nivel más bajo que sea:
+- durable
+- verificable
+- fácil de mantener
+- suficientemente explícito para que otro agente lo use sin adivinar
+
+No convertir todo en skill. No dejar capacidades importantes solo en memoria conversacional.
+
 ## Regla
 El core debe crecer despacio. Es mejor un core pequeño y fiable que uno grande y confuso.

@@ -30,7 +30,10 @@ Todo comportamiento que deba sobrevivir a sesiones futuras debe quedar escrito e
 ### 6. Errores convertidos en sistema
 Un error importante no termina cuando se arregla: termina cuando deja una prevención reutilizable.
 
-### 7. Organización no equivale a aislamiento
+### 7. Soluciones valiosas deben volverse capacidad durable
+Si una solución, workaround, verificación o patrón corrige un fallo repetible o crea leverage real, no debe quedar solo como conversación. Debe promocionarse al nivel mínimo durable que corresponda: regla, doc, script, skill, test o routing.
+
+### 8. Organización no equivale a aislamiento
 Topics, canales, etiquetas o carpetas organizan. El aislamiento real debe venir de sesiones, subagentes, workflows o límites explícitos.
 
 ## Reglas operativas
@@ -39,6 +42,7 @@ Topics, canales, etiquetas o carpetas organizan. El aislamiento real debe venir 
 - No copiar identidad, memoria o contexto sensible de un agente a otro.
 - No introducir complejidad estructural si no da leverage real.
 - Preferir arquitecturas auditables y mantenibles.
+- Convertir aprendizajes probados en capacidades verificables, no en prompts largos.
 
 ## Anti-patrones
 - Depender de un mega prompt como fuente de verdad.
@@ -47,6 +51,7 @@ Topics, canales, etiquetas o carpetas organizan. El aislamiento real debe venir 
 - Responder sobre memoria, acuerdos o decisiones sin verificar.
 - Añadir fallbacks/modelos solo porque aparecen en un catálogo.
 - Confundir una prueba aislada con una práctica madura reusable.
+- Dejar un fix repetible enterrado en chat o memoria diaria sin promoción operativa.
 
 ## Criterio de promoción al core
 Una práctica debería pasar al core solo si:

@@ -22,6 +22,8 @@ From there, the agent can read this foundation and improve its own operational s
 - verification
 - housekeeping
 - error learning
+- learning loop / self-improvement inbox
+- source-of-truth adoption model
 - governance
 - lightweight operational templates
 

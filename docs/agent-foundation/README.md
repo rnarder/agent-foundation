@@ -23,6 +23,12 @@ Desde ese punto, el agente puede leer `Agent Foundation` y usarlo para mejorar s
 - verificación
 - housekeeping
 - aprendizaje de errores
+- loop de aprendizaje con inbox crudo y promoción controlada
+- Foundation como fuente canónica para que otros agentes lean/adapten desde el repo
+- promoción de soluciones a capacidades durables (`skillify`)
+- continuidad ligera por topic/proyecto
+- gates deterministas antes de enviar/publicar
+- recuperación local-first antes de APIs vivas cuando aplique
 - gobernanza de prácticas
 - templates de apoyo para operación post-bootstrap
 
@@ -34,7 +40,10 @@ Desde ese punto, el agente puede leer `Agent Foundation` y usarlo para mejorar s
 - `VERIFICATION.md` — validación y criterio de cierre
 - `HOUSEKEEPING.md` — mantenimiento silencioso y healthchecks
 - `ERROR_LEARNING.md` — postmortems, lessons y prevención
+- `LEARNING_LOOP.md` — inbox crudo de aprendizajes y promoción controlada
+- `SOURCE_OF_TRUTH.md` — cómo el Foundation vive como fuente canónica para otros agentes
 - `PROMOTION_POLICY.md` — criterio para que una práctica entre al core
+- `skillify-in-agent-foundation.md` — patrón de promoción de soluciones/fallos a capacidades durables
 - `NEW_AGENT_ADOPTION.md` — cómo aplicar esta base a un agente nuevo ya operativo
 - `ROUTING_AND_ISOLATION.md` — separación entre organización visible y aislamiento real
 - `CHANGELOG.md` — evolución del framework

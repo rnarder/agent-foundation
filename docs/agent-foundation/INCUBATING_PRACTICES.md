@@ -1,6 +1,6 @@
 # Incubating Practices
 
-Objetivo: seguir prácticas prometedoras antes de adoptarlas en Bruno o promoverlas al core de `Agent Foundation`.
+Objetivo: seguir prácticas prometedoras antes de adoptarlas localmente o promoverlas al core de `Agent Foundation`.
 
 ## Reglas del sistema
 - **Máximo 3 prácticas activas** a la vez.
@@ -18,7 +18,7 @@ Objetivo: seguir prácticas prometedoras antes de adoptarlas en Bruno o promover
 ## Estados
 - `intake` — idea capturada, aún sin prueba
 - `incubating` — en prueba controlada
-- `adopted-local` — adoptada en Bruno/sistema local
+- `adopted-local` — adoptada en un agente/sistema local
 - `promoted-core` — promovida al Agent Foundation
 - `discarded` — no aportó suficiente valor
 
@@ -28,7 +28,7 @@ Objetivo: seguir prácticas prometedoras antes de adoptarlas en Bruno o promover
 - **Source:** `thedotmack/claude-mem`
 - **Status:** `promoted-core`, `adopted-local`
 - **Hypothesis:** buscar primero, leer fragmentos mínimos y expandir solo si hace falta reducirá inflación de contexto y mejorará higiene de memoria.
-- **Trial scope:** workflow real de Bruno al consultar memoria/contexto previo antes de responder o actuar.
+- **Trial scope:** workflow real de un agente al consultar memoria/contexto previo antes de responder o actuar.
 - **Outcome:** adoptado como principio operativo y promovido a `MEMORY_SYSTEM.md`.
 - **Why promoted:** alto valor, bajo coste, encaje natural con el sistema actual y sin complejidad adicional.
 

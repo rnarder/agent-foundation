@@ -35,9 +35,37 @@ Ejemplo abstracto: asumir que la organización visual separa memoria o ejecució
 Ejemplo abstracto: endurecer seguridad de una forma que rompe la operativa real del host.
 
 ## Cómo promover el aprendizaje
+- si aún necesita triage → `.learnings/ERRORS.md` o `.learnings/LEARNINGS.md`
 - si la lección es de comportamiento → `lessons.md` o equivalente
 - si es estructural/reusable → docs core del framework
 - si es local/operativa → documentación del host/agente concreto
+
+## Inbox antes de memoria permanente
+Para fallos pequeños, dudas o patrones que todavía no justifican postmortem completo, capturar primero en el inbox de aprendizaje.
+
+Promover desde ahí solo si el patrón se repite, tiene impacto alto, afecta seguridad/privacidad/dinero/acciones externas, o corrige un comportamiento futuro importante.
+
+## RCA mínimo para incidentes operativos
+Cuando un servicio cae, no basta con arreglar el síntoma visible.
+
+Checklist:
+- revisar health/status actual
+- revisar logs del servicio alrededor del primer fallo
+- distinguir caída real vs ventana legítima de mantenimiento
+- buscar crash signatures repetidas
+- confirmar si el fix aplicado ataca causa raíz o solo reduce ruido
+- documentar corrección si el diagnóstico inicial fue incompleto
+
+Regla: un watchdog que reinicia servicios puede ocultar la causa raíz si no se revisan logs. La recuperación automática es útil, pero la prevención durable exige identificar el patrón que causó la caída.
+
+## Workaround seguro vs deuda oculta
+Un workaround operativo puede ser correcto si:
+- desactiva solo una capacidad no crítica
+- mantiene el acceso principal funcionando
+- queda documentado con impacto y rollback
+- se verifica en el proceso real, no solo en el archivo de config
+
+No debe convertirse en deuda silenciosa: registrar el workaround y revisar si una actualización futura lo vuelve innecesario.
 
 ## Anti-patrones
 - arreglar rápido y olvidar

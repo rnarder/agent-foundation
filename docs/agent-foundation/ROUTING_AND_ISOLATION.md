@@ -39,8 +39,33 @@ Que algo se responda en un topic no implica que toda su ejecución deba vivir en
 - si hace falta, delega a sesión/subagente
 - el resultado vuelve al lugar correcto de delivery
 
+## Continuidad ligera por topic/proyecto
+Para agentes que trabajan en grupos, foros o muchos proyectos, puede existir una capa de estado corto por topic/proyecto.
+
+### Objetivo
+Evitar perder decisiones, pendientes y reglas locales sin inflar memoria global ni depender de un LLM que “recuerde” todo.
+
+### Forma recomendada
+- un archivo corto por topic/proyecto
+- decisiones activas
+- pendientes reales
+- reglas locales
+- último checkpoint útil
+
+### Reglas
+- no es un log de chat
+- no es aislamiento de memoria
+- no es fuente de secretos
+- no requiere mantenimiento rutinario con LLM
+- actualizar solo ante cambios significativos: decisión, cierre, bloqueo, regla durable o checkpoint
+
+### Relación con routing
+El topic puede decidir dónde responder y qué estado corto revisar, pero si el trabajo necesita aislamiento real debe usar sesión/subagente/workflow separado.
+
 ## Anti-patrones
 - asumir que foro/thread = aislamiento
 - usar un mismo hilo para trabajos que merecen separación real
 - esconder política de routing en prompts efímeros
 - mezclar organización social con arquitectura interna
+- convertir topic-state en un diario ruidoso
+- usar heartbeats/modelos para mantener topic-state sin valor claro

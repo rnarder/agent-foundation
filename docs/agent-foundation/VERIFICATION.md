@@ -24,6 +24,36 @@ Verificar no es repetir la intención del cambio. Es comprobar el estado real, e
 - revisar `openclaw status`
 - revisar config afectada
 - proponer mejoras solo si aportan valor real
+- si hubo reboot, confirmar kernel/versión activa y ausencia/presencia de reboot pendiente
+- comprobar health del gateway/canales después de la ventana post-boot
+- revisar logs recientes si hubo restart loop, aunque el health ya esté verde
+
+### Tras cambios de watchdog/cron
+- ejecutar el script manualmente una vez
+- validar sintaxis antes de instalarlo (`bash -n`, `py_compile`, etc.)
+- confirmar que el cron quedó instalado exactamente una vez
+- revisar estado/log local del watcher
+- probar que no emite alertas duplicadas en estado estable
+
+### Tras workarounds por variable de entorno
+- verificar el archivo donde se persistió la variable
+- verificar que el proceso real la recibió (`/proc/<pid>/environ` o equivalente)
+- reiniciar solo el servicio necesario
+- revisar logs para confirmar que la firma del fallo desapareció
+- documentar impacto y rollback
+
+### Antes de enviar/publicar hacia afuera
+Usar un gate determinista cuando el payload tenga links, archivos, adjuntos o campos estructurados.
+
+Checklist mínimo:
+- links alcanzables o explícitamente no verificados
+- archivos existen y no están vacíos
+- destinatario/canal/thread correcto
+- campos requeridos completos
+- formato esperado por el canal/API
+- no incluir secretos o contexto privado accidentalmente
+
+Este patrón debe ser script/checklist antes que LLM cuando la validación sea mecánica.
 
 ### Tras endurecer seguridad/sandbox
 - confirmar compatibilidad con el host real
