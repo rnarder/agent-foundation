@@ -49,3 +49,12 @@ Objetivo: seguir prácticas prometedoras antes de adoptarlas localmente o promov
 - **Promote if:** detecta errores antes, mejora confianza de cierre y sigue siendo ligero.
 - **Discard if:** duplica verificación ya existente o mete demasiados pasos sin beneficio claro.
 - **Next checkpoint:** próxima modificación relevante de config o flujo operativo.
+
+## 4) PRD to vertical executable issues
+- **Source:** AI Hero article `5 Agent Skills I Use Every Day` (`to-prd` / `to-issues` pattern), adapted locally in Bruno as `prd-vertical-issues`.
+- **Status:** `adopted-local`, `incubating` for core promotion
+- **Hypothesis:** after panorama/PRD/planning, converting the agreed direction into vertical slices with acceptance criteria, dependencies and verification will reduce context burn and make subagent/human execution cleaner.
+- **Trial scope:** next large website, automation or multi-agent implementation where a plan needs to become executable work.
+- **Promote if:** it produces clearer handoffs, better parallelization, and fewer vague/horizontal tasks without adding heavy ceremony.
+- **Discard if:** it duplicates existing planning guidance or creates issue-writing overhead without improving execution.
+- **Next checkpoint:** next substantial project plan that needs decomposition into tasks or subagent work.

@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.8.0 — 2026-05-17
+- `ADOPTION_FLOW.md` now requires explicit core-promotion evaluation after reusable local adoptions: promote to Agent Foundation, incubate as candidate, or keep local.
+- `INCUBATING_PRACTICES.md` tracks PRD-to-vertical-issues as a locally adopted Bruno pattern under incubation for possible Foundation promotion.
+
 ## v1.7.0 — 2026-04-29
 - Se añadió `LEARNING_LOOP.md` como patrón core para capturar aprendizajes/errores/features en un inbox crudo antes de promoverlos.
 - Se añadió `SOURCE_OF_TRUTH.md` para formalizar que Agent Foundation vive como fuente canónica: un agente mantenedor destila aprendizajes al repo común y otros agentes beben de esa fuente para adaptar localmente.

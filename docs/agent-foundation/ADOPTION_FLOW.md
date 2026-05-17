@@ -15,6 +15,7 @@ Marco operativo para mover ideas desde observación externa hasta adopción real
    - Si la prueba mejora algo real en un agente de referencia o en el sistema local, puede adoptarse localmente.
    - Si produce correcciones, errores o requests todavía inmaduros, capturarlos en un inbox tipo `.learnings/` antes de memoria permanente.
    - Aún no implica promoción al core.
+   - Toda adopción local reutilizable debe cerrar con una evaluación explícita: promover al core, incubar como candidata o mantener solo local.
 
 4. **Core promotion**
    - Si además es reusable, clara y portable, se promueve al `Agent Foundation`.
