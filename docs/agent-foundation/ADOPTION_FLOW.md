@@ -38,6 +38,8 @@ Marco operativo para mover ideas desde observación externa hasta adopción real
 - No dejar backlog muerto disfrazado de investigación.
 - No promover ideas por entusiasmo teórico.
 - Promover solo lo que siga teniendo sentido tras la prueba real.
+- Cualquier trial, piloto o "probar antes de promover" debe tener owner, criterio y checkpoint acotado aunque viva fuera de `INCUBATING_PRACTICES.md`.
+- El agente que propone probar algo antes de promoverlo es responsable del seguimiento salvo dueño explícito distinto.
 
 ## Criterio práctico
 Preguntas mínimas antes de mover una práctica de estado:
