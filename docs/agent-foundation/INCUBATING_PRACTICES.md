@@ -5,6 +5,7 @@ Objetivo: seguir prácticas prometedoras antes de adoptarlas localmente o promov
 ## Reglas del sistema
 - **Máximo 3 prácticas activas** a la vez.
 - Toda práctica incubada debe tener:
+  - owner
   - origen
   - hipótesis
   - scope de prueba
@@ -12,6 +13,7 @@ Objetivo: seguir prácticas prometedoras antes de adoptarlas localmente o promov
   - criterio de descarte
   - próximo checkpoint
 - Si una práctica no se mueve tras varios checkpoints, se descarta o vuelve a intake.
+- El agente mantenedor de Foundation es responsable de revisar las incubaciones en el checkpoint o, como máximo, en 30 días si el checkpoint era condicional y no ocurrió.
 - **Intake ≠ incubación ≠ adopción**.
 - Una práctica solo se promueve cuando mejora algo real sin añadir complejidad innecesaria.
 
@@ -34,27 +36,30 @@ Objetivo: seguir prácticas prometedoras antes de adoptarlas localmente o promov
 
 ## 2) Context segmentation for long tasks
 - **Source:** `gsd-build/get-shit-done`
+- **Owner:** Bruno
 - **Status:** `incubating`
 - **Hypothesis:** dividir tareas largas en slices/briefs más atómicos reducirá context rot y mejorará claridad/verificación en trabajos complejos.
 - **Trial scope:** tareas largas con subagentes, investigación o cambios multi-paso.
 - **Promote if:** mejora claridad, reduce mezcla de contextos y hace más limpia la verificación sin meter demasiada ceremonia.
 - **Discard if:** se vuelve burocrático, fragmenta demasiado o no mejora la calidad real.
-- **Next checkpoint:** próximo trabajo largo con subagentes o ejecución en varias fases.
+- **Next checkpoint:** próximo trabajo largo con subagentes o ejecución en varias fases; revisar por fecha si no ocurre antes de 2026-06-17.
 
 ## 3) Verification loops more explicit
 - **Source:** `gsd-build/get-shit-done`, `affaan-m/everything-claude-code`
+- **Owner:** Bruno
 - **Status:** `incubating`
 - **Hypothesis:** checkpoints más explícitos y baratos dentro del flujo mejorarán fiabilidad sin volver pesado el proceso.
 - **Trial scope:** cambios de config, routing, modelos y tareas con varias piezas.
 - **Promote if:** detecta errores antes, mejora confianza de cierre y sigue siendo ligero.
 - **Discard if:** duplica verificación ya existente o mete demasiados pasos sin beneficio claro.
-- **Next checkpoint:** próxima modificación relevante de config o flujo operativo.
+- **Next checkpoint:** próxima modificación relevante de config o flujo operativo; revisar por fecha si no ocurre antes de 2026-06-17.
 
 ## 4) PRD to vertical executable issues
 - **Source:** AI Hero article `5 Agent Skills I Use Every Day` (`to-prd` / `to-issues` pattern), adapted locally in Bruno as `prd-vertical-issues`.
+- **Owner:** Bruno
 - **Status:** `adopted-local`, `incubating` for core promotion
 - **Hypothesis:** after panorama/PRD/planning, converting the agreed direction into vertical slices with acceptance criteria, dependencies and verification will reduce context burn and make subagent/human execution cleaner.
 - **Trial scope:** next large website, automation or multi-agent implementation where a plan needs to become executable work.
 - **Promote if:** it produces clearer handoffs, better parallelization, and fewer vague/horizontal tasks without adding heavy ceremony.
 - **Discard if:** it duplicates existing planning guidance or creates issue-writing overhead without improving execution.
-- **Next checkpoint:** next substantial project plan that needs decomposition into tasks or subagent work.
+- **Next checkpoint:** next substantial project plan that needs decomposition into tasks or subagent work; review by date if it does not happen before 2026-06-17.

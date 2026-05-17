@@ -3,6 +3,7 @@
 ## v1.8.0 — 2026-05-17
 - `ADOPTION_FLOW.md` now requires explicit core-promotion evaluation after reusable local adoptions: promote to Agent Foundation, incubate as candidate, or keep local.
 - `INCUBATING_PRACTICES.md` tracks PRD-to-vertical-issues as a locally adopted Bruno pattern under incubation for possible Foundation promotion.
+- `INCUBATING_PRACTICES.md` now requires owners and bounded reviews for incubating practices; Bruno owns follow-up unless another maintainer is explicit.
 
 ## v1.7.0 — 2026-04-29
 - Se añadió `LEARNING_LOOP.md` como patrón core para capturar aprendizajes/errores/features en un inbox crudo antes de promoverlos.
