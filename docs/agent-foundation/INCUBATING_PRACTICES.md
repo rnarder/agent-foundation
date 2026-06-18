@@ -37,22 +37,24 @@ Objetivo: seguir prácticas prometedoras antes de adoptarlas localmente o promov
 ## 2) Context segmentation for long tasks
 - **Source:** `gsd-build/get-shit-done`
 - **Owner:** Bruno
-- **Status:** `incubating`
+- **Status:** `adopted-local`
 - **Hypothesis:** dividir tareas largas en slices/briefs más atómicos reducirá context rot y mejorará claridad/verificación en trabajos complejos.
 - **Trial scope:** tareas largas con subagentes, investigación o cambios multi-paso.
 - **Promote if:** mejora claridad, reduce mezcla de contextos y hace más limpia la verificación sin meter demasiada ceremonia.
 - **Discard if:** se vuelve burocrático, fragmenta demasiado o no mejora la calidad real.
-- **Next checkpoint:** próximo trabajo largo con subagentes o ejecución en varias fases; revisar por fecha si no ocurre antes de 2026-06-17.
+- **Checkpoint review 2026-06-18:** adoptado localmente en el agente de referencia como criterio operativo para trabajos largos, subagentes y revisiones por fases. No promover como doctrina core nueva por separado todavía: el valor está en aplicarlo con ligereza dentro de flujos de planificación, subagentes y continuidad ligera, no en añadir más estructura.
+- **Next decision:** mantener local; reconsiderar promoción core solo si otro agente necesita el patrón explícito.
 
 ## 3) Verification loops more explicit
 - **Source:** `gsd-build/get-shit-done`, `affaan-m/everything-claude-code`
 - **Owner:** Bruno
-- **Status:** `incubating`
+- **Status:** `promoted-core`, `adopted-local`
 - **Hypothesis:** checkpoints más explícitos y baratos dentro del flujo mejorarán fiabilidad sin volver pesado el proceso.
 - **Trial scope:** cambios de config, routing, modelos y tareas con varias piezas.
 - **Promote if:** detecta errores antes, mejora confianza de cierre y sigue siendo ligero.
 - **Discard if:** duplica verificación ya existente o mete demasiados pasos sin beneficio claro.
-- **Next checkpoint:** próxima modificación relevante de config o flujo operativo; revisar por fecha si no ocurre antes de 2026-06-17.
+- **Checkpoint review 2026-06-18:** promovido. Hubo evidencia repetida de valor en cambios de configuración, routing/modelos, flujos operativos, actualizaciones y auditorías post-fallback. El patrón ya vive en `VERIFICATION.md` y en reglas de post-config/post-update.
+- **Next decision:** no necesita seguir incubando; mantener como regla core ligera.
 
 ## 4) PRD to vertical executable issues
 - **Source:** AI Hero article `5 Agent Skills I Use Every Day` (`to-prd` / `to-issues` pattern), adapted locally in Bruno as `prd-vertical-issues`.
@@ -62,4 +64,5 @@ Objetivo: seguir prácticas prometedoras antes de adoptarlas localmente o promov
 - **Trial scope:** next large website, automation or multi-agent implementation where a plan needs to become executable work.
 - **Promote if:** it produces clearer handoffs, better parallelization, and fewer vague/horizontal tasks without adding heavy ceremony.
 - **Discard if:** it duplicates existing planning guidance or creates issue-writing overhead without improving execution.
-- **Next checkpoint:** next substantial project plan that needs decomposition into tasks or subagent work; review by date if it does not happen before 2026-06-17.
+- **Checkpoint review 2026-06-18:** no hay evidencia suficiente para promover al core porque no se ha usado aún en un proyecto grande real con descomposición vertical. La adopción local sigue siendo válida como skill del agente de referencia, pero la promoción Foundation queda pendiente.
+- **Next checkpoint:** próximo plan sustancial de web/automatización que requiera descomposición en tareas ejecutables; si no ocurre antes de 2026-07-18, revisar y decidir `promoted-core`, `adopted-local-only` o `discarded`.

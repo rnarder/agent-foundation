@@ -65,6 +65,24 @@ Este patrón debe ser script/checklist antes que LLM cuando la validación sea m
 - validar coste/plan real si aplica
 - probar una tarea real del rol afectado
 
+### Tras trabajar con capacidad degradada
+Si una tarea sensible o durable se ejecutó bajo una capacidad degradada, no aceptar el cierre sin revisión fuerte.
+
+Capacidad degradada incluye:
+- modelo fallback o menor al previsto
+- contexto incompleto o recuperado parcialmente
+- herramientas críticas no disponibles
+- sesión aislada sin acceso a verificaciones normales
+
+Checklist mínimo de revisión:
+- qué decisiones se tomaron
+- qué archivos/config/capacidades se tocaron
+- si hubo acciones externas o irreversibles
+- qué evidencia se usó
+- qué debe aceptar, corregir o repetir el modelo/agente fuerte
+
+Un modelo barato puede preparar evidencia. La decisión durable debe revisarse con la capacidad adecuada.
+
 ## Patrón de verificación barato y fiable
 1. aplicar cambio
 2. revisar estado real

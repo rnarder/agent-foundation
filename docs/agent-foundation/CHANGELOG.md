@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.8.1 — 2026-06-18
+- Se revisaron bajo GPT los checkpoints de incubación que vencían el 2026-06-17 tras detectar que el run programado ocurrió durante fallback.
+- `INCUBATING_PRACTICES.md` marca `context segmentation` como `adopted-local` y `verification loops` como `promoted-core`/`adopted-local`.
+- `prd-vertical-issues` sigue adoptado localmente e incubando solo para promoción core, con nuevo checkpoint acotado al próximo plan sustancial o 2026-07-18.
+- `VERIFICATION.md` añade un gate general de revisión cuando trabajo sensible o durable se ejecutó con capacidad degradada.
+- `ADOPTION_FLOW.md` exige revisar con capacidad fuerte las decisiones de promoción/descarte preparadas bajo capacidad degradada.
+
 ## v1.8.0 — 2026-05-17
 - `ADOPTION_FLOW.md` now requires explicit core-promotion evaluation after reusable local adoptions: promote to Agent Foundation, incubate as candidate, or keep local.
 - `INCUBATING_PRACTICES.md` tracks PRD-to-vertical-issues as a locally adopted Bruno pattern under incubation for possible Foundation promotion.

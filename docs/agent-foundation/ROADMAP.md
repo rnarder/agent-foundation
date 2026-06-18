@@ -23,10 +23,10 @@
 - continuidad ligera por topic/proyecto
 - gates deterministas antes de envíos externos
 - recuperación local-first para historia/calendario/eventos antes de APIs vivas
+- verification loops explícitos y gates de revisión cuando el trabajo ocurrió con capacidad degradada
 
 ## Incubando
-- context segmentation para tareas largas
-- verification loops más explícitos
+- PRD to vertical executable issues como patrón de promoción core
 - harness health / scorecard
 - runtime profiles
 - ejemplos concretos de adopción completa a un agente nuevo
