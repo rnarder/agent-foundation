@@ -125,9 +125,7 @@ Repo: https://github.com/thedotmack/claude-mem
 **Adoptar ideas (alto valor conceptual)**
 
 ### Dónde encaja
-- `MEMORY_SYSTEM.md`
-- futura política explícita de retrieval progresivo
-- posible incubación de score de coste/contexto
+- `RECALL.md` (desde v2.0.0)
 
 ---
 
@@ -146,10 +144,8 @@ Repo: https://github.com/thedotmack/claude-mem
 ---
 
 # Próximos pasos sugeridos
-1. Incorporar **progressive disclosure** en `MEMORY_SYSTEM.md`
-2. Reforzar **context segmentation / slices** en `SUBAGENT_POLICY.md`
-3. Endurecer **verification loops** en `VERIFICATION.md`
-4. Añadir al `ROADMAP.md`:
+1. Reforzar **context segmentation / slices** en `SUBAGENT_POLICY.md`
+2. Endurecer **verification loops** en `VERIFICATION.md`
+3. Añadir al `ROADMAP.md`:
    - harness health / scorecard
    - runtime profiles
-   - retrieval progresivo

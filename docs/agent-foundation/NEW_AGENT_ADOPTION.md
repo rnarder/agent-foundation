@@ -22,14 +22,14 @@ Leer:
 - `CHANGELOG.md`
 - `SOURCE_OF_TRUTH.md`
 - `CORE_PRINCIPLES.md`
-- `MEMORY_SYSTEM.md`
-- `MODEL_ROUTING.md`
 - `VERIFICATION.md`
+- `HOUSEKEEPING.md`
+- `MODEL_ROUTING.md`
 
 ### 2. Aplicar la estructura operativa
 Usar desde `Agent Foundation`:
 - principios core
-- sistema de memoria
+- recall honesto y local-first
 - routing/model policy reusable
 - política de subagentes
 - verificación
@@ -65,13 +65,13 @@ Cuando el Foundation evoluciona, un agente no necesita una receta privada por no
 1. leer `CHANGELOG.md`,
 2. leer los documentos nuevos o modificados,
 3. decidir qué aplica a su entorno,
-4. adaptar sus archivos locales (`AGENTS.md`, skills, memoria, scripts) sin copiar memoria privada de otro agente.
+4. adaptar sus archivos locales (`AGENTS.md`, skills, scripts) sin copiar memoria privada de otro agente.
 
 Ver `SOURCE_OF_TRUTH.md` para el patrón completo.
 
 ### 4. Validar maduración inicial
 Checklist mínimo:
-- ¿su memoria operativa está clara?
+- ¿responde sobre el pasado con evidencia y local-first?
 - ¿su routing está claro?
 - ¿tiene criterio de verificación?
 - ¿sus prácticas operativas viven en archivos?

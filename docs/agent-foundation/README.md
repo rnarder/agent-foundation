@@ -1,59 +1,52 @@
-# Agent Foundation v1
+# Agent Foundation v2
 
-Base reusable y neutral para madurar agentes de OpenClaw después del bootstrap inicial.
+Doctrina reusable para madurar agentes de OpenClaw después del bootstrap inicial.
 
 ## Objetivo
-Ayudar a un agente ya funcional a estructurar mejor su operación post-bootstrap.
+Transferir a un agente ya funcional las prácticas que demostraron valor en operación real: criterio, verificación, mantenimiento del host y gobernanza de mejoras.
 
 ## Cuándo se aplica
-Se aplica cuando el agente ya está vivo y operativo, típicamente con:
+Cuando el agente ya está vivo y operativo, típicamente con:
 - OpenClaw instalado
 - al menos un modelo funcionando
 - workspace creado
 - bootstrap inicial completado
 - primer contacto con el usuario ya ocurrido
 
-Desde ese punto, el agente puede leer `Agent Foundation` y usarlo para mejorar su operación.
-
 ## Qué cubre
-- principios operativos
-- sistema de memoria
-- model routing
-- política de subagentes
-- verificación
-- housekeeping
-- aprendizaje de errores
-- loop de aprendizaje con inbox crudo y promoción controlada
-- Foundation como fuente canónica para que otros agentes lean/adapten desde el repo
-- promoción de soluciones a capacidades durables (`skillify`)
+- principios operativos (mecánico antes que LLM, panorama 360, investigar antes de reinventar)
+- recuperación honesta y local-first de historia
+- model routing por coste y plan real
+- política de subagentes y briefs
+- verificación y gates deterministas antes de envíos externos
+- housekeeping del host: watchdogs conscientes de mantenimiento y watchers de updates
+- RCA de incidentes y workarounds documentados
 - continuidad ligera por topic/proyecto
-- gates deterministas antes de enviar/publicar
-- recuperación local-first antes de APIs vivas cuando aplique
-- gobernanza de prácticas
-- templates de apoyo para operación post-bootstrap
+- gobernanza: intake de ideas externas, incubación, promoción y descarte
 
 ## Estructura
 - `CORE_PRINCIPLES.md` — filosofía operativa reusable
-- `MEMORY_SYSTEM.md` — memoria, higiene y continuidad
+- `RECALL.md` — recuperación honesta y local-first antes de APIs vivas
 - `MODEL_ROUTING.md` — routing y fallback de modelos
 - `SUBAGENT_POLICY.md` — coordinador, delegación y aislamiento real
-- `VERIFICATION.md` — validación y criterio de cierre
-- `HOUSEKEEPING.md` — mantenimiento silencioso y healthchecks
-- `ERROR_LEARNING.md` — postmortems, lessons y prevención
-- `LEARNING_LOOP.md` — inbox crudo de aprendizajes y promoción controlada
-- `SOURCE_OF_TRUTH.md` — cómo el Foundation vive como fuente canónica para otros agentes
-- `PROMOTION_POLICY.md` — criterio para que una práctica entre al core
-- `skillify-in-agent-foundation.md` — patrón de promoción de soluciones/fallos a capacidades durables
-- `NEW_AGENT_ADOPTION.md` — cómo aplicar esta base a un agente nuevo ya operativo
-- `ROUTING_AND_ISOLATION.md` — separación entre organización visible y aislamiento real
+- `VERIFICATION.md` — validación, gates y criterio de cierre
+- `HOUSEKEEPING.md` — mantenimiento silencioso, watchdogs y watchers
+- `ERROR_LEARNING.md` — RCA, postmortems y workarounds
+- `ROUTING_AND_ISOLATION.md` — organización visible vs aislamiento real; continuidad por topic
+- `PROMOTION_POLICY.md` — criterio para que una práctica entre al core y nivel mínimo durable
+- `ADOPTION_FLOW.md` — de idea externa a adopción real
+- `EXTERNAL_PATTERNS_INTAKE.md` — registro de ideas externas evaluadas
+- `INCUBATING_PRACTICES.md` — prácticas en prueba
+- `SOURCE_OF_TRUTH.md` — cómo el Foundation vive como fuente canónica
+- `NEW_AGENT_ADOPTION.md` — cómo aplicar esta base a un agente nuevo
 - `CHANGELOG.md` — evolución del framework
-- `ROADMAP.md` — backlog y mejoras previstas
-- `templates/AGENTS_TEMPLATE.md` — apoyo para reglas operativas
-- `templates/ROUTING_TEMPLATE.md` — apoyo para routing e aislamiento
+- `ROADMAP.md` — backlog
+- `templates/AGENTS_TEMPLATE.md` — reglas operativas de partida
+- `templates/ROUTING_TEMPLATE.md` — routing y aislamiento
 
 ## Uso recomendado
-1. Leer este índice
-2. Revisar principios, memoria, routing y verificación
-3. Aplicar la base operativa al workspace del agente
+1. Leer este índice y `CORE_PRINCIPLES.md`
+2. Revisar verificación, housekeeping y routing
+3. Adaptar al workspace del agente lo que aplique a su host y su usuario
 4. Mantener `CHANGELOG.md` y `ROADMAP.md`
 5. Promover al core solo prácticas ya probadas

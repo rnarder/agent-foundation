@@ -28,11 +28,12 @@ Objetivo: seguir prácticas prometedoras antes de adoptarlas localmente o promov
 
 ## 1) Progressive disclosure for memory
 - **Source:** `thedotmack/claude-mem`
-- **Status:** `promoted-core`, `adopted-local`
+- **Status:** `retired-core` (v2.0.0)
 - **Hypothesis:** buscar primero, leer fragmentos mínimos y expandir solo si hace falta reducirá inflación de contexto y mejorará higiene de memoria.
 - **Trial scope:** workflow real de un agente al consultar memoria/contexto previo antes de responder o actuar.
-- **Outcome:** adoptado como principio operativo y promovido a `MEMORY_SYSTEM.md`.
+- **Outcome:** adoptado como principio operativo y promovido al core (entonces `MEMORY_SYSTEM.md`).
 - **Why promoted:** alto valor, bajo coste, encaje natural con el sistema actual y sin complejidad adicional.
+- **v2.0.0:** retirado del core; la regla útil que queda (buscar y leer lo justo) vive en `RECALL.md`.
 
 ## 2) Context segmentation for long tasks
 - **Source:** `gsd-build/get-shit-done`
@@ -59,10 +60,11 @@ Objetivo: seguir prácticas prometedoras antes de adoptarlas localmente o promov
 ## 4) PRD to vertical executable issues
 - **Source:** AI Hero article `5 Agent Skills I Use Every Day` (`to-prd` / `to-issues` pattern), adapted locally in Bruno as `prd-vertical-issues`.
 - **Owner:** Bruno
-- **Status:** `adopted-local`, `incubating` for core promotion
+- **Status:** `adopted-local-only`
 - **Hypothesis:** after panorama/PRD/planning, converting the agreed direction into vertical slices with acceptance criteria, dependencies and verification will reduce context burn and make subagent/human execution cleaner.
 - **Trial scope:** next large website, automation or multi-agent implementation where a plan needs to become executable work.
 - **Promote if:** it produces clearer handoffs, better parallelization, and fewer vague/horizontal tasks without adding heavy ceremony.
 - **Discard if:** it duplicates existing planning guidance or creates issue-writing overhead without improving execution.
 - **Checkpoint review 2026-06-18:** no hay evidencia suficiente para promover al core porque no se ha usado aún en un proyecto grande real con descomposición vertical. La adopción local sigue siendo válida como skill del agente de referencia, pero la promoción Foundation queda pendiente.
-- **Next checkpoint:** próximo plan sustancial de web/automatización que requiera descomposición en tareas ejecutables; si no ocurre antes de 2026-07-18, revisar y decidir `promoted-core`, `adopted-local-only` o `discarded`.
+- **Checkpoint review 2026-07-27:** vencido el checkpoint sin evidencia de uso sustancial que justifique promoción core. Se cierra la incubación como `adopted-local-only`: conservar la skill local y usarla cuando un plan grande lo amerite, sin mantener una promoción Foundation abierta indefinidamente.
+- **Next decision:** ninguna pendiente. Reabrir intake solo si aparece evidencia nueva en un proyecto real.

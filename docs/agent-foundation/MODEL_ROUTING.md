@@ -53,6 +53,7 @@ Reservarlo para:
 - ¿está realmente disponible en este host/provider?
 - ¿está cubierto por el plan/coste real?
 - ¿se probó en una tarea real?
+- ¿la medición atribuida al modelo está aislada de actividad concurrente en la misma cuenta?
 - ¿su comportamiento encaja con el rol propuesto?
 - ¿el fallback posterior sigue teniendo sentido?
 

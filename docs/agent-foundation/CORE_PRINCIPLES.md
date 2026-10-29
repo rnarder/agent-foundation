@@ -30,11 +30,21 @@ Todo comportamiento que deba sobrevivir a sesiones futuras debe quedar escrito e
 ### 6. Errores convertidos en sistema
 Un error importante no termina cuando se arregla: termina cuando deja una prevención reutilizable.
 
-### 7. Soluciones valiosas deben volverse capacidad durable
-Si una solución, workaround, verificación o patrón corrige un fallo repetible o crea leverage real, no debe quedar solo como conversación. Debe promocionarse al nivel mínimo durable que corresponda: regla, doc, script, skill, test o routing.
+### 7. Lo mecánico sale del modelo
+Cuando una solución corrige un fallo repetible, su parte mecánica (lookup exacto, parseo, cálculo de fechas, filtros, dedupe, validaciones, health checks, routing mecánico) se extrae a script o test. En el modelo queda solo lo que requiere juicio: síntesis, priorización, interpretación ambigua y tradeoffs.
+
+El resultado no es "el modelo aprendió", es "el sistema cambió". Ver niveles en `PROMOTION_POLICY.md`.
 
 ### 8. Organización no equivale a aislamiento
 Topics, canales, etiquetas o carpetas organizan. El aislamiento real debe venir de sesiones, subagentes, workflows o límites explícitos.
+
+### 9. Investigar antes de reinventar
+Ante un problema no trivial, repetido, incierto o con soluciones maduras fuera del workspace, investigar primero fuentes pertinentes: documentación oficial, estándares, papers, issues y prácticas reales.
+
+La investigación no termina al reunir enlaces o resumir ideas. Debe seguir el ciclo:
+**investigar → entender → adaptar → aplicar → verificar**.
+
+Solo cuenta como aprendizaje operativo cuando modifica una decisión, workflow, artefacto o gate y demuestra valor en el camino real. Investigar nunca desplaza las fuentes de verdad del proyecto ni autoriza a inventar datos que esas fuentes no sostienen.
 
 ## Reglas operativas
 - No asumir que una mejora teórica sirve en el host real sin probarla.
@@ -43,6 +53,7 @@ Topics, canales, etiquetas o carpetas organizan. El aislamiento real debe venir 
 - No introducir complejidad estructural si no da leverage real.
 - Preferir arquitecturas auditables y mantenibles.
 - Convertir aprendizajes probados en capacidades verificables, no en prompts largos.
+- Ante problemas maduros o repetidos, investigar soluciones externas pertinentes antes de continuar por ensayo y error local.
 
 ## Anti-patrones
 - Depender de un mega prompt como fuente de verdad.
@@ -52,6 +63,7 @@ Topics, canales, etiquetas o carpetas organizan. El aislamiento real debe venir 
 - Añadir fallbacks/modelos solo porque aparecen en un catálogo.
 - Confundir una prueba aislada con una práctica madura reusable.
 - Dejar un fix repetible enterrado en chat o memoria diaria sin promoción operativa.
+- Tratar una colección de enlaces o un resumen externo como si ya fuera una mejora aplicada.
 
 ## Criterio de promoción al core
 Una práctica debería pasar al core solo si:

@@ -34,16 +34,13 @@ Ejemplo abstracto: asumir que la organización visual separa memoria o ejecució
 ### 4. Complejidad que se volvió en contra
 Ejemplo abstracto: endurecer seguridad de una forma que rompe la operativa real del host.
 
-## Cómo promover el aprendizaje
-- si aún necesita triage → `.learnings/ERRORS.md` o `.learnings/LEARNINGS.md`
-- si la lección es de comportamiento → `lessons.md` o equivalente
-- si es estructural/reusable → docs core del framework
-- si es local/operativa → documentación del host/agente concreto
+## Dónde queda cada aprendizaje
+- regla de comportamiento → `AGENTS.md` del agente
+- parte mecánica → script/test (ver `PROMOTION_POLICY.md`)
+- incidente del host, gotcha de herramienta o workaround → registro de incidentes/auditorías del agente
+- estructural y portable → docs core del framework
 
-## Inbox antes de memoria permanente
-Para fallos pequeños, dudas o patrones que todavía no justifican postmortem completo, capturar primero en el inbox de aprendizaje.
-
-Promover desde ahí solo si el patrón se repite, tiene impacto alto, afecta seguridad/privacidad/dinero/acciones externas, o corrige un comportamiento futuro importante.
+Los incidentes del host merecen registro propio aunque sean específicos de un entorno: son justo lo que se necesita la próxima vez que el mismo servicio caiga.
 
 ## RCA mínimo para incidentes operativos
 Cuando un servicio cae, no basta con arreglar el síntoma visible.
@@ -65,7 +62,7 @@ Un workaround operativo puede ser correcto si:
 - queda documentado con impacto y rollback
 - se verifica en el proceso real, no solo en el archivo de config
 
-No debe convertirse en deuda silenciosa: registrar el workaround y revisar si una actualización futura lo vuelve innecesario.
+No debe convertirse en deuda silenciosa: registrar el workaround y revisar tras cada update si sigue siendo necesario. Un workaround que el upstream ya resolvió se retira.
 
 ## Anti-patrones
 - arreglar rápido y olvidar

@@ -2,6 +2,11 @@
 
 Marco operativo para mover ideas desde observación externa hasta adopción real sin que se conviertan en ruido.
 
+## Cuándo investigar antes de actuar
+Activar investigación dirigida antes de seguir por ensayo y error cuando el problema sea no trivial, repetido, incierto o probablemente ya tenga soluciones maduras fuera del workspace.
+
+Priorizar fuentes primarias y evidencia pertinente al problema: documentación oficial, estándares, papers, issues y prácticas reales. La investigación debe producir comprensión accionable, no una colección de enlaces.
+
 ## Flujo
 1. **Intake**
    - La idea entra en `EXTERNAL_PATTERNS_INTAKE.md`.
@@ -13,14 +18,13 @@ Marco operativo para mover ideas desde observación externa hasta adopción real
 
 3. **Local adoption**
    - Si la prueba mejora algo real en un agente de referencia o en el sistema local, puede adoptarse localmente.
-   - Si produce correcciones, errores o requests todavía inmaduros, capturarlos en un inbox tipo `.learnings/` antes de memoria permanente.
    - Aún no implica promoción al core.
    - Toda adopción local reutilizable debe cerrar con una evaluación explícita: promover al core, incubar como candidata o mantener solo local.
 
 4. **Core promotion**
    - Si además es reusable, clara y portable, se promueve al `Agent Foundation`.
 
-5. **Durable capability / skillify**
+5. **Durable capability**
    - Si la práctica corrige un fallo repetible o crea una capacidad operativa, elegir el nivel mínimo durable:
      - regla
      - checklist/doc
@@ -41,6 +45,8 @@ Marco operativo para mover ideas desde observación externa hasta adopción real
 - Si la decisión de promoción/descarte se preparó bajo capacidad degradada, revisar la evidencia con la capacidad fuerte antes de cerrar.
 - Cualquier trial, piloto o "probar antes de promover" debe tener owner, criterio y checkpoint acotado aunque viva fuera de `INCUBATING_PRACTICES.md`.
 - El agente que propone probar algo antes de promoverlo es responsable del seguimiento salvo dueño explícito distinto.
+- Investigar no sustituye aplicar: no cerrar una investigación hasta que cambie una decisión, workflow, artefacto o gate y se verifique en el path real.
+- Las fuentes externas aportan métodos y controles; no sustituyen las fuentes de verdad, restricciones ni evidencia propias del proyecto.
 
 ## Criterio práctico
 Preguntas mínimas antes de mover una práctica de estado:
@@ -60,3 +66,5 @@ Cuando una idea viene de un repo, prompt, framework o agente externo:
 5. promoverla solo si mejora un flujo real
 
 La meta no es copiar frameworks externos. La meta es absorber patrones que hagan al agente más fiable, barato o capaz sin importar de dónde vinieron.
+
+En forma compacta: **investigar → entender → adaptar → aplicar → verificar**.

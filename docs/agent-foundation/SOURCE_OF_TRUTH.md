@@ -1,7 +1,7 @@
 # Agent Foundation as Source of Truth
 
 ## Objetivo
-`Agent Foundation` debe vivir como fuente canónica en su repo/documentación reusable. Un agente mantenedor lo actualiza cuando una práctica local demuestra valor —por ejemplo el learning loop inspirado en self-improving-agent/Hermes— y otros agentes lo leen desde esa fuente para adaptar lo que corresponda a su propio entorno.
+`Agent Foundation` debe vivir como fuente canónica en su repo/documentación reusable. Un agente mantenedor lo actualiza cuando una práctica local demuestra valor —por ejemplo un gate de verificación que evitó envíos rotos— y otros agentes lo leen desde esa fuente para adaptar lo que corresponda a su propio entorno.
 
 ## Principio
 El Foundation no es una receta privada por agente. Es la fuente común.
@@ -78,26 +78,23 @@ sed -n '1,120p' docs/agent-foundation/README.md
 sed -n '1,80p' docs/agent-foundation/CHANGELOG.md
 
 # 3. Leer docs nuevas o relevantes
-# Ejemplo para learning loop:
-sed -n '1,220p' docs/agent-foundation/LEARNING_LOOP.md
+sed -n '1,220p' docs/agent-foundation/VERIFICATION.md
 
 # 4. Adaptar localmente solo lo que aplique
 # No copiar memoria privada ni reglas específicas de otro agente.
 ```
 
-## Ejemplo: Learning Loop v1.7.0
-El patrón `learning-loop` entra al Foundation como doctrina reusable:
-- `.learnings/` como inbox crudo
-- promoción controlada a memoria/skills/scripts/docs
-- coste mínimo, sin reflexión LLM rutinaria
-- separación entre learning-loop como entrada y skillify como posible salida
+## Ejemplo: gates antes de envíos externos
+El patrón de gates deterministas entró al Foundation tras demostrar valor en envíos con links y adjuntos:
+- checklist mecánico (links alcanzables, archivos no vacíos, destinatario correcto)
+- script antes que LLM
+- verificación en el camino real de envío
 
 Cada agente decide si lo materializa como:
 - solo regla en `AGENTS.md`,
-- `.learnings/` + reglas de memoria,
-- skill local completa,
-- helper determinista,
-- o una combinación proporcional a su madurez.
+- checklist en su doc operativa,
+- script de preflight,
+- o skill con script y tests, proporcional a su volumen de envíos.
 
 ## Anti-patrones
 - crear recetas por agente dentro del Foundation cuando basta un patrón general

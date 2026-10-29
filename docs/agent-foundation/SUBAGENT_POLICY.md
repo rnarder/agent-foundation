@@ -30,11 +30,12 @@ Delegar solo cuando el beneficio en foco, aislamiento o paralelismo supera el co
 
 ## Roles reutilizables
 - `main` — coordinador y cara visible
-- `triage` — clasificación/extracción/routing
 - `research` — investigación y síntesis
-- `ops` — debugging/incidentes/config
-- `implementation` — cambios aislados o coding
+- `implementation` — cambios aislados, coding y operaciones bajo contrato
 - `review` — segunda pasada y validación crítica
+
+Triage mecánico pertenece al router determinista/main. No crear un agente
+separado si no aporta herramientas, contexto o permisos distintos.
 
 ## Reglas maduras
 ### 1. Delegar con brief concreto
@@ -60,7 +61,7 @@ Delegar no significa dejar de pensar. El coordinador sigue siendo responsable de
 - hacer la verificación final
 
 ### 4. Limitar capacidades auxiliares
-No todos los agentes deben tener `exec`, `browser`, mensajería o herramientas sensibles. Especialmente `triage` y `review` deben operar con carriles estrechos.
+No todos los agentes deben tener `exec`, `browser`, mensajería o herramientas sensibles. Especialmente `research` y `review` deben operar con carriles estrechos.
 
 ### 5. Aislamiento real > organización visual
 Un topic no aísla por sí solo. Si una tarea necesita separación real, usar subagente/sesión/workflow explícito.

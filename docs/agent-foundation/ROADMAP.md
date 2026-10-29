@@ -7,26 +7,21 @@
 - Añadir guía de migración/retrofit para agentes ya existentes.
 - Revisar periódicamente qué prácticas siguen siendo core y cuáles deberían quedarse como locales o experimentales.
 - Ejecutar checkpoints de las prácticas en incubación y decidir promoción o descarte.
-- Añadir ejemplos completos de `skillify` con script/test/routing.
-- Decidir qué patrones locales merecen skill reusable vs doc/checklist.
+- Añadir ejemplos completos de extracción determinista (script + test + routing) a partir de un fallo real.
 
-## Ya incorporado en v1
-- separación entre core reusable, personalización local y entorno
-- doctrina base de memoria, routing, verificación, housekeeping y error learning
-- política de promoción al core
+## En el core (v2)
+- principios operativos: mecánico antes que LLM, panorama 360, investigar antes de reinventar
+- recall honesto y local-first
+- política de promoción al core y niveles mínimos durables
 - flujo de adopción para nuevos agentes
 - distinción formal entre routing y aislamiento real
 - intake externo y flujo de adopción/descartes
-- progressive disclosure / layered retrieval para memoria
 - watchdogs conscientes de mantenimiento y watchers de updates del host
-- `skillify` como disciplina de promoción durable
 - continuidad ligera por topic/proyecto
 - gates deterministas antes de envíos externos
-- recuperación local-first para historia/calendario/eventos antes de APIs vivas
 - verification loops explícitos y gates de revisión cuando el trabajo ocurrió con capacidad degradada
 
 ## Incubando
-- PRD to vertical executable issues como patrón de promoción core
 - harness health / scorecard
 - runtime profiles
 - ejemplos concretos de adopción completa a un agente nuevo

@@ -1,5 +1,27 @@
 # Changelog
 
+## v2.0.0 — 2026-10-29
+Foco: el Foundation transmite solo lo que vale la pena adoptar. Se retira lo que el runtime de OpenClaw ya resuelve de serie en agentes nuevos.
+
+Retirado del core:
+- `LEARNING_LOOP.md` (inbox `.learnings/` y promoción manual).
+- `MEMORY_SYSTEM.md` (niveles de memoria y progressive disclosure). La parte que sigue aportando pasa a `RECALL.md`.
+- `skillify-in-agent-foundation.md`, `skillify-manifesto.md` y `skill-overlap-triage.md`. La idea que sigue aportando (sacar lo mecánico del modelo a script/test) pasa a `CORE_PRINCIPLES.md` §7.
+
+Cambios:
+- Nuevo `RECALL.md`: recall honesto y local-first antes de APIs vivas.
+- `CORE_PRINCIPLES.md` §7 reformulado como "lo mecánico sale del modelo".
+- `ERROR_LEARNING.md` sin inbox; define dónde queda cada aprendizaje y exige revisar workarounds tras cada update.
+- `PROMOTION_POLICY.md`, `ADOPTION_FLOW.md`, `SOURCE_OF_TRUTH.md`, `NEW_AGENT_ADOPTION.md`, `ROADMAP.md` y `templates/AGENTS_TEMPLATE.md` alineados.
+
+- 2026-07-27: Closed the overdue `prd-vertical-issues` incubation as `adopted-local-only`; no substantial real-project evidence justified core promotion, so the open-ended checkpoint was removed.
+
+## v1.9.0 — 2026-07-22
+- `CORE_PRINCIPLES.md` incorpora **Investigar antes de reinventar** para problemas no triviales, repetidos, inciertos o con soluciones maduras externas.
+- El ciclo reusable queda definido como `investigar → entender → adaptar → aplicar → verificar`; reunir enlaces o resumir ideas no cuenta como mejora aplicada.
+- `templates/AGENTS_TEMPLATE.md` añade la regla operativa para agentes nuevos y preserva las fuentes de verdad del proyecto frente a referencias externas.
+- `ADOPTION_FLOW.md` añade el trigger de investigación dirigida y exige que lo aprendido cambie un workflow, artefacto, gate o decisión y se verifique en el camino real.
+
 ## v1.8.1 — 2026-06-18
 - Se revisaron bajo GPT los checkpoints de incubación que vencían el 2026-06-17 tras detectar que el run programado ocurrió durante fallback.
 - `INCUBATING_PRACTICES.md` marca `context segmentation` como `adopted-local` y `verification loops` como `promoted-core`/`adopted-local`.
