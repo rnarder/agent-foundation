@@ -16,13 +16,13 @@ From there, the agent can read this foundation and improve its own operational s
 
 ## What it covers
 - core operational principles
-- memory system
+- honest, local-first recall
 - model routing
 - subagent policy
 - verification
 - housekeeping
 - error learning
-- learning loop / self-improvement inbox
+- incident RCA and workaround review
 - source-of-truth adoption model
 - governance
 - lightweight operational templates
