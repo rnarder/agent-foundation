@@ -46,6 +46,8 @@ Los checks deben ayudar a detectar:
 Si el housekeeping requiere una llamada de modelo constante para funcionar, probablemente está mal diseñado.
 
 ### 6. Watchdogs conscientes de mantenimiento
+OpenClaw ya gestiona sus propios updates (espera a idle, drena, rollback) y el supervisor del servicio reinicia el gateway si cae. Un watchdog propio solo aporta para lo que eso no ve: gateway colgado sin crash, canales caídos, health degradado.
+
 Un watchdog no debe confundir una ventana legítima de update/reboot con una caída real.
 
 Patrón recomendado:
@@ -58,7 +60,7 @@ Patrón recomendado:
 - alertar solo si la recuperación falla fuera de la ventana esperada
 
 ### 7. Watchers de updates del host
-Para hosts remotos o siempre encendidos, un watcher barato de updates debe:
+OpenClaw no gestiona los updates del sistema operativo. Para hosts remotos o siempre encendidos, un watcher barato de updates debe:
 - refrescar metadatos de paquetes de forma determinística
 - detectar paquetes pendientes y reboot requerido
 - persistir estado local para deduplicar

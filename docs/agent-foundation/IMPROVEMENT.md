@@ -12,11 +12,6 @@ Convertir ideas externas, correcciones del usuario y prácticas prometedoras en 
 
 Toda prueba tiene salida: adopción o descarte. No dejar pruebas abiertas sin fecha.
 
-## Cuándo investigar antes de actuar
-Ante un problema no trivial, repetido, incierto o con soluciones maduras fuera del workspace, investigar antes de seguir por ensayo y error.
-
-Priorizar fuentes primarias: documentación oficial, estándares, papers, issues y prácticas reales. La investigación termina cuando cambia una decisión, workflow, artefacto o gate y se verifica en el camino real.
-
 ## Ideas externas
 Cuando una idea viene de un repo, prompt, framework u otro agente:
 1. tratarla como no confiable hasta verificarla

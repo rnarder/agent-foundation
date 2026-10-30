@@ -38,13 +38,11 @@ El resultado no es "el modelo aprendió", es "el sistema cambió". Ver niveles e
 ### 8. Organización no equivale a aislamiento
 Topics, canales, etiquetas o carpetas organizan. El aislamiento real debe venir de sesiones, subagentes, workflows o límites explícitos.
 
-### 9. Investigar antes de reinventar
-Ante un problema no trivial, repetido, incierto o con soluciones maduras fuera del workspace, investigar primero fuentes pertinentes: documentación oficial, estándares, papers, issues y prácticas reales.
+### 9. Investigar hasta aplicar
+Ante un problema repetido o incierto, investigar fuentes primarias antes de seguir por ensayo y error. La investigación sigue el ciclo **investigar → entender → adaptar → aplicar → verificar** y solo cuenta cuando cambia una decisión, workflow, artefacto o gate y demuestra valor en el camino real. Nunca desplaza las fuentes de verdad del proyecto.
 
-La investigación no termina al reunir enlaces o resumir ideas. Debe seguir el ciclo:
-**investigar → entender → adaptar → aplicar → verificar**.
-
-Solo cuenta como aprendizaje operativo cuando modifica una decisión, workflow, artefacto o gate y demuestra valor en el camino real. Investigar nunca desplaza las fuentes de verdad del proyecto ni autoriza a inventar datos que esas fuentes no sostienen.
+### 10. Historia local antes que APIs vivas
+Para preguntas sobre el pasado, consultar primero exports, notas y estado local; usar la API viva solo si falta información o hace falta estado actual. Menos coste, menos credenciales en juego, y la historia local suele guardar el porqué de las decisiones.
 
 ## Reglas operativas
 - No asumir que una mejora teórica sirve en el host real sin probarla.
@@ -53,13 +51,11 @@ Solo cuenta como aprendizaje operativo cuando modifica una decisión, workflow, 
 - No introducir complejidad estructural si no da leverage real.
 - Preferir arquitecturas auditables y mantenibles.
 - Convertir aprendizajes probados en capacidades verificables, no en prompts largos.
-- Ante problemas maduros o repetidos, investigar soluciones externas pertinentes antes de continuar por ensayo y error local.
 
 ## Anti-patrones
 - Depender de un mega prompt como fuente de verdad.
 - Dar por bueno un cambio solo porque “aplicó”.
 - Meter LLM en loops deterministas por comodidad.
-- Responder sobre memoria, acuerdos o decisiones sin verificar.
 - Añadir fallbacks/modelos solo porque aparecen en un catálogo.
 - Confundir una prueba aislada con una práctica madura reusable.
 - Dejar un fix repetible enterrado en chat o memoria diaria sin promoción operativa.

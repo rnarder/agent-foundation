@@ -14,7 +14,6 @@ Justo después, aplicar el Foundation. No hace falta esperar a que el agente "ma
 - `README.md`
 - `CORE_PRINCIPLES.md`
 - `VERIFICATION.md`
-- `RECALL.md`
 
 ## Paso 2 — Sembrar reglas en `AGENTS.md`
 Partir de `templates/AGENTS_TEMPLATE.md` y fusionarlo con el `AGENTS.md` existente del agente:
@@ -44,7 +43,7 @@ Si vive en un equipo personal, aplicar solo lo que tenga sentido allí.
 Usar `ERROR_LEARNING.md` e `IMPROVEMENT.md` para que errores e ideas externas acaben en reglas, scripts o tests, no en chat.
 
 ## Checklist inicial
-- ¿responde sobre el pasado con evidencia y local-first?
+- ¿consulta historia local antes que APIs vivas?
 - ¿su routing de modelos está escrito y probado?
 - ¿verifica antes de declarar éxito?
 - ¿sus reglas operativas viven en archivos?

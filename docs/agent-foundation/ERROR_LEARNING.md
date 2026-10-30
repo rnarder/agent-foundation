@@ -35,10 +35,9 @@ Ejemplo abstracto: asumir que la organización visual separa memoria o ejecució
 Ejemplo abstracto: endurecer seguridad de una forma que rompe la operativa real del host.
 
 ## Dónde queda cada aprendizaje
-- regla de comportamiento → `AGENTS.md` del agente
+Además de reglas en `AGENTS.md` o skills:
 - parte mecánica → script/test (ver `IMPROVEMENT.md`)
-- incidente del host, gotcha de herramienta o workaround → registro de incidentes/auditorías del agente
-- práctica estructural → doc operativa del agente
+- incidente del host, gotcha de herramienta o workaround → registro de incidentes del agente
 
 Los incidentes del host merecen registro propio aunque sean específicos de un entorno: son justo lo que se necesita la próxima vez que el mismo servicio caiga.
 

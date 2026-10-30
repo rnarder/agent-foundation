@@ -28,14 +28,10 @@ Delegar solo cuando el beneficio en foco, aislamiento o paralelismo supera el co
 - tareas donde el coste de resumir supera el trabajo
 - cuando el subagente necesitaría volver cada dos minutos a pedir microdecisiones
 
-## Roles reutilizables
-- `main` — coordinador y cara visible
-- `research` — investigación y síntesis
-- `implementation` — cambios aislados, coding y operaciones bajo contrato
-- `review` — segunda pasada y validación crítica
-
-Triage mecánico pertenece al router determinista/main. No crear un agente
-separado si no aporta herramientas, contexto o permisos distintos.
+## Roles
+Partir de las plantillas de roles nativas de OpenClaw. No crear un agente
+separado si no aporta herramientas, contexto o permisos distintos; el triage
+mecánico pertenece al router determinista/main.
 
 ## Reglas maduras
 ### 1. Delegar con brief concreto
