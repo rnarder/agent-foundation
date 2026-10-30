@@ -1,26 +1,26 @@
 # Verification
 
-Cerrar un trabajo = implementado + comprobado en estado real + documentado si deja aprendizaje reusable. "El comando no dio error" no es evidencia.
+Closing a piece of work = implemented + checked against real state + documented if it leaves a reusable lesson. "The command returned no error" is not evidence.
 
-## Verificación por tipo de cambio
-Para: que cada tipo de cambio tenga su prueba concreta.
-- **config patch**: releer el estado real tras el restart (modelos, agentes, fallbacks efectivos)
-- **update de OpenClaw**: release notes, `openclaw status`, config afectada, workarounds aún necesarios
-- **reboot / update del sistema**: kernel y versión activos, reboot pendiente o no, health de gateway y canales pasada la ventana post-boot, logs si hubo restart loop aunque el health esté verde
-- **watchdog / cron**: validar sintaxis (`bash -n`, `py_compile`), ejecutar una vez a mano, instalado exactamente una vez, estado/log local, sin alertas duplicadas en estado estable
-- **variable de entorno como workaround**: archivo donde persiste, proceso real que la recibe (`/proc/<pid>/environ`), reiniciar solo el servicio necesario, firma del fallo desaparecida, impacto y rollback documentados
-- **seguridad / sandbox**: probar un flujo real en el host, no solo la config
-- **routing / modelos**: disponibilidad y coste reales, una tarea real del rol afectado
-Verificar: el cierre de cada cambio cita la evidencia de su línea.
+## Verification per change type
+For: every change type has its concrete test.
+- **config patch**: reread the real state after the restart (effective models, agents, fallbacks)
+- **OpenClaw update**: release notes, `openclaw status`, affected config, workarounds still needed
+- **reboot / system update**: active kernel and version, reboot pending or not, gateway and channel health after the post-boot window, logs if there was a restart loop even if health is green
+- **watchdog / cron**: validate syntax (`bash -n`, `py_compile`), run once by hand, installed exactly once, local state/log, no duplicate alerts in steady state
+- **environment variable as workaround**: file where it persists, real process receiving it (`/proc/<pid>/environ`), restart only the needed service, failure signature gone, impact and rollback documented
+- **security / sandbox**: test a real flow on the host, not just the config
+- **routing / models**: real availability and cost, a real task of the affected role
+Verify: the closure of each change cites the evidence from its line.
 
-## Gate antes de enviar fuera
-Para: que links, archivos y destinatarios salgan correctos.
-- payload con links, archivos, adjuntos o campos estructurados → check determinista antes de enviar
-- links alcanzables (o marcados como no verificados), archivos existentes y no vacíos, destinatario/canal/thread correcto, campos requeridos completos, formato del canal, sin secretos ni contexto privado
-Verificar: un envío con un link roto o un archivo vacío se bloquea antes de salir.
+## Gate before sending out
+For: links, files and recipients go out correct.
+- payload with links, files, attachments or structured fields → deterministic check before sending
+- links reachable (or marked as unverified), files exist and are not empty, correct recipient/channel/thread, required fields complete, channel format, no secrets or private context
+Verify: a send with a broken link or an empty file is blocked before it goes out.
 
-## Revisión tras capacidad degradada
-Para: que lo hecho con menos capacidad no quede como decisión durable sin revisar.
-- degradada = modelo fallback o menor, contexto parcial, herramientas críticas ausentes, sesión aislada sin verificaciones normales
-- trabajo sensible o durable hecho así → revisión con la capacidad adecuada: decisiones, archivos/config tocados, acciones externas, evidencia usada, qué aceptar o repetir
-Verificar: ninguna decisión durable tomada en fallback queda sin esa revisión.
+## Review after degraded capacity
+For: work done with less capacity does not become a durable decision without review.
+- degraded = fallback or smaller model, partial context, critical tools missing, isolated session without the normal checks
+- sensitive or durable work done this way → review with the right capacity: decisions, files/config touched, external actions, evidence used, what to accept or redo
+Verify: no durable decision made on fallback goes without that review.

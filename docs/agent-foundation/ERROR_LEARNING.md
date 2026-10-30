@@ -1,11 +1,11 @@
 # Error Learning
 
-## RCA de incidentes
-Para: que cada caída o error importante deje causa raíz y prevención.
-- registrar: errores repetibles, regresiones, supuestos falsos, routing incorrecto, coste inesperado, fallos de aislamiento o verificación, cambios que fallaron en el host real
-- formato: qué pasó · por qué · qué se cambió · qué prevención queda
-- incidente de servicio: health actual, logs alrededor del primer fallo, ¿mantenimiento legítimo o caída real?, firmas repetidas, ¿el fix ataca la causa o solo el ruido?
-- un reinicio automático recupera, no explica: revisar logs igualmente
-- destino: parte mecánica → script/test; regla → `AGENTS.md` o skill; incidente del host, gotcha o workaround → registro de incidentes del agente (aunque sea específico del entorno)
-- workaround aceptable: desactiva solo algo no crítico, mantiene el acceso principal, documentado con impacto y rollback, verificado en el proceso real; revisarlo tras cada update y retirarlo si el upstream lo resolvió
-Verificar: cada incidente registrado tiene causa raíz y una prevención concreta (script, test, gate o regla).
+## Incident RCA
+For: every outage or important error leaves a root cause and a prevention.
+- record: repeatable errors, regressions, false assumptions, wrong routing, unexpected cost, isolation or verification failures, changes that failed on the real host
+- format: what happened · why · what was changed · what prevention remains
+- service incident: current health, logs around the first failure, legitimate maintenance or real outage?, repeated signatures, does the fix target the cause or just the noise?
+- an automatic restart recovers, it does not explain: review the logs anyway
+- destination: mechanical part → script/test; rule → `AGENTS.md` or skill; host incident, gotcha or workaround → the agent's incident log (even if environment-specific)
+- acceptable workaround: disables only something non-critical, keeps main access working, documented with impact and rollback, verified on the real process; review it after every update and remove it once upstream fixed it
+Verify: every recorded incident has a root cause and a concrete prevention (script, test, gate or rule).

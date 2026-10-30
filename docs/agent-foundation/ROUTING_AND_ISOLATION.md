@@ -1,16 +1,16 @@
 # Routing and Isolation
 
-## Aislamiento explícito
-Para: que la separación sea real cuando importa.
-- canales, topics, labels y carpetas = organización y delivery
-- sesiones, subagentes y workflows explícitos = aislamiento de contexto, memoria y herramientas
-- patrón: el topic elige política inicial → el coordinador decide complejidad y rol → si hace falta, delega a sesión/subagente → el resultado vuelve al lugar de delivery
-- la política de routing vive en archivos del workspace
-Verificar: el routing escrito dice, por canal/topic, comportamiento por defecto, cuándo delegar y dónde llegan las alertas.
+## Explicit isolation
+For: real separation when it matters.
+- channels, topics, labels and folders = organization and delivery
+- sessions, subagents and explicit workflows = isolation of context, memory and tools
+- pattern: the topic picks the initial policy → the coordinator decides complexity and role → if needed, delegates to a session/subagent → the result returns to the delivery place
+- the routing policy lives in workspace files
+Verify: the written routing states, per channel/topic, the default behavior, when to delegate and where alerts go.
 
-## Continuidad ligera por topic/proyecto
-Para: no perder decisiones y pendientes de cada proyecto sin inflar la memoria global.
-- un archivo corto por topic/proyecto: decisiones activas, pendientes reales, reglas locales, último checkpoint
-- actualizar solo ante decisión, cierre, bloqueo, regla durable o checkpoint
-- sin secretos y sin mantenimiento con LLM
-Verificar: cada archivo cabe en una lectura rápida y no contiene logs de chat.
+## Lightweight per-topic/project continuity
+For: not losing each project's decisions and open items without bloating global memory.
+- one short file per topic/project: active decisions, real open items, local rules, last checkpoint
+- update only on a decision, closure, blocker, durable rule or checkpoint
+- no secrets and no LLM upkeep
+Verify: each file fits in a quick read and contains no chat logs.

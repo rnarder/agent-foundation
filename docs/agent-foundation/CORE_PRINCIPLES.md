@@ -1,30 +1,30 @@
 # Core Principles
 
-## Lo mecánico sale del modelo
-Para: menos coste y resultados repetibles.
-- tarea mecánica (lookup, parseo, fechas, filtros, dedupe, validaciones, health checks, polling) → script, cron o check determinista
-- al corregir un fallo repetible, extraer su parte mecánica a script o test; en el modelo queda solo el juicio: síntesis, priorización, ambigüedad, tradeoffs
-Verificar: ningún cron, heartbeat o loop periódico llama a un modelo para trabajo determinista.
+## Mechanical work leaves the model
+For: lower cost and repeatable results.
+- mechanical task (lookup, parsing, dates, filters, dedupe, validations, health checks, polling) → script, cron or deterministic check
+- when fixing a repeatable failure, extract its mechanical part into a script or test; the model keeps only judgment: synthesis, prioritization, ambiguity, tradeoffs
+Verify: no cron, heartbeat or periodic loop calls a model for deterministic work.
 
-## Panorama 360 antes de cambios importantes
-Para: no romper lo que ya funciona al tocar arquitectura, config, routing o automatizaciones.
-- antes de cambiar: estado actual, restricciones, opciones y tradeoffs
-Verificar: el cambio deja escrito qué había antes y por qué se eligió la opción.
+## 360 overview before important changes
+For: not breaking what already works when touching architecture, config, routing or automations.
+- before changing: current state, constraints, options and tradeoffs
+Verify: the change records what was there before and why the option was chosen.
 
-## Investigar hasta aplicar
-Para: que investigar acabe en un cambio verificado.
-- ante un problema repetido o incierto, fuentes primarias antes que ensayo y error
-- ciclo: investigar → entender → adaptar → aplicar → verificar
-- cuenta solo si cambia una decisión, workflow, artefacto o gate y demuestra valor en el camino real
-- las fuentes de verdad del proyecto prevalecen sobre referencias externas
-Verificar: cada investigación cerrada apunta al cambio que produjo.
+## Research until applied
+For: research that ends in a verified change.
+- for a repeated or uncertain problem, primary sources before trial and error
+- cycle: research → understand → adapt → apply → verify
+- it counts only if it changes a decision, workflow, artifact or gate and proves its value on the real path
+- the project's sources of truth prevail over external references
+Verify: every closed research item points to the change it produced.
 
-## Historia local antes que APIs vivas
-Para: responder sobre el pasado con menos coste, menos credenciales en juego y con el porqué de las decisiones.
-- exports, notas y estado local primero; API viva solo si falta información o hace falta estado actual
-Verificar: una pregunta sobre un evento pasado se responde sin llamar a la API viva cuando hay fuente local.
+## Local history before live APIs
+For: answering about the past at lower cost, with fewer credentials in play and with the reasons behind decisions.
+- exports, notes and local state first; live API only if information is missing or current state is needed
+Verify: a question about a past event is answered without calling the live API when a local source exists.
 
-## Catálogo ≠ plan real
-Para: no diseñar sobre modelos, providers o features que el plan no cubre.
-- disponible en catálogo, ruta válida y coste aceptable son tres comprobaciones distintas
-- una mejora teórica no vale en el host hasta probarla allí
+## Catalog ≠ real plan
+For: not designing on models, providers or features the plan does not include.
+- available in the catalog, valid route and acceptable cost are three separate checks
+- a theoretical improvement is worth nothing on the host until tested there

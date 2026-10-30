@@ -1,26 +1,26 @@
 # Model Routing
 
-## Modelo por tarea según el plan real
-Para: cada tarea con el modelo justo, sin coste ni riesgo de más.
-- orden: ¿hace falta LLM? → ¿qué nivel? → ¿qué modelos cubre el plan real? → ¿qué fallback mantiene continuidad?
-- sin LLM: tareas mecánicas
-- pequeño/rápido: triage, clasificación, extracción estructurada, normalización
-- principal: conversación, síntesis, decisiones operativas normales
-- fuerte: debugging complejo, arquitectura, decisiones delicadas
-- por rol: `triage` barato, `main` principal, `ops` fuerte y fiable, `review` estable, `research` suficiente con coste controlado
-- modelos premium nunca en automático
-- la política vive en archivos del workspace
-Verificar: el routing está escrito y cada modelo del flujo normal pasó por la checklist de abajo.
+## Model per task according to the real plan
+For: each task with the right model, without excess cost or risk.
+- order: is an LLM needed? → what level? → which models does the real plan cover? → which fallback keeps continuity?
+- no LLM: mechanical tasks
+- small/fast: triage, classification, structured extraction, normalization
+- main: conversation, synthesis, normal operational decisions
+- strong: complex debugging, architecture, delicate decisions
+- by role: `triage` cheap, `main` main model, `ops` strong and reliable, `review` stable, `research` good enough at controlled cost
+- premium models never on automatic
+- the policy lives in workspace files
+Verify: the routing is written down and every model in the normal flow passed the checklist below.
 
-## Promocionar un modelo al flujo normal
-- disponible en este host/provider
-- cubierto por el plan/coste real
-- probado en una tarea real del rol
-- medición aislada de actividad concurrente en la misma cuenta
-- el fallback posterior sigue teniendo sentido
+## Promoting a model to the normal flow
+- available on this host/provider
+- covered by the real plan/cost
+- tested on a real task of the role
+- measurement isolated from concurrent activity on the same account
+- the fallback after it still makes sense
 
 ## Fallback
-Para: continuidad sin sorpresas.
-- elegido por calidad y coste, no solo por disponibilidad
-- avisar si el fallback cambia calidad, latencia o coste de forma relevante
-- lo hecho en fallback pasa por la revisión de `VERIFICATION.md`
+For: continuity without surprises.
+- chosen for quality and cost, not just availability
+- notify if the fallback changes quality, latency or cost significantly
+- work done on fallback goes through the review in `VERIFICATION.md`
