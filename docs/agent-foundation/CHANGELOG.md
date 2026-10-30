@@ -1,5 +1,12 @@
 # Changelog
 
+## v3.3.0 — 2026-10-30
+Formato para el agente: cada mejora con `Para:`, viñetas en imperativo y `Verificar:`.
+
+- `README.md` es el punto de entrada: cuándo aplicarlo y qué contiene cada doc.
+- Cada mejora termina en una línea `Verificar:` que sirve de checklist.
+- El agente incorpora las mejoras directamente a su `AGENTS.md`.
+
 ## v3.2.0 — 2026-10-30
 Doctrina general para agentes de OpenClaw, aplicable justo después del bootstrap.
 
