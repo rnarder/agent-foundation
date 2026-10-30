@@ -1,6 +1,6 @@
 # Agent Foundation
 
-Mejoras probadas para agentes de OpenClaw, adoptables por cualquier agente: desde uno recién nacido tras el bootstrap hasta uno con tiempo en marcha.
+Paquete de mejoras para agentes de OpenClaw.
 
 Adopción: leer cada doc, adoptar las mejoras que encajen con tu entorno y comprobarlas con su línea `Verificar`. Cuando cambie, leer `CHANGELOG.md` y adoptar lo nuevo.
 
