@@ -36,9 +36,9 @@ Ejemplo abstracto: endurecer seguridad de una forma que rompe la operativa real 
 
 ## Dónde queda cada aprendizaje
 - regla de comportamiento → `AGENTS.md` del agente
-- parte mecánica → script/test (ver `PROMOTION_POLICY.md`)
+- parte mecánica → script/test (ver `IMPROVEMENT.md`)
 - incidente del host, gotcha de herramienta o workaround → registro de incidentes/auditorías del agente
-- estructural y portable → docs core del framework
+- práctica estructural → doc operativa del agente
 
 Los incidentes del host merecen registro propio aunque sean específicos de un entorno: son justo lo que se necesita la próxima vez que el mismo servicio caiga.
 

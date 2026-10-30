@@ -33,7 +33,7 @@ Un error importante no termina cuando se arregla: termina cuando deja una preven
 ### 7. Lo mecánico sale del modelo
 Cuando una solución corrige un fallo repetible, su parte mecánica (lookup exacto, parseo, cálculo de fechas, filtros, dedupe, validaciones, health checks, routing mecánico) se extrae a script o test. En el modelo queda solo lo que requiere juicio: síntesis, priorización, interpretación ambigua y tradeoffs.
 
-El resultado no es "el modelo aprendió", es "el sistema cambió". Ver niveles en `PROMOTION_POLICY.md`.
+El resultado no es "el modelo aprendió", es "el sistema cambió". Ver niveles en `IMPROVEMENT.md`.
 
 ### 8. Organización no equivale a aislamiento
 Topics, canales, etiquetas o carpetas organizan. El aislamiento real debe venir de sesiones, subagentes, workflows o límites explícitos.
@@ -65,10 +65,9 @@ Solo cuenta como aprendizaje operativo cuando modifica una decisión, workflow, 
 - Dejar un fix repetible enterrado en chat o memoria diaria sin promoción operativa.
 - Tratar una colección de enlaces o un resumen externo como si ya fuera una mejora aplicada.
 
-## Criterio de promoción al core
-Una práctica debería pasar al core solo si:
+## Criterio para volver regla una práctica
+Una práctica debería convertirse en regla durable del agente solo si:
 - ya demostró valor en más de un caso
 - reduce coste, riesgo o ruido
 - se puede explicar claramente
-- no depende de una persona, tema o host concreto
 - sigue siendo útil aunque cambie el modelo activo

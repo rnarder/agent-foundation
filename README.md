@@ -1,34 +1,19 @@
 # Agent Foundation
 
-Reusable, neutral operating foundation for OpenClaw agents after initial bootstrap.
-
-## What it is
-A post-bootstrap maturation framework for agents that are already alive and minimally operational.
-
-Typical starting point:
-- OpenClaw installed
-- at least one model working
-- workspace created
-- bootstrap completed
-- first user/agent contact already happened
-
-From there, the agent can read this foundation and improve its own operational structure.
+General, reusable operating doctrine for OpenClaw agents. Apply it right after the native bootstrap, once the user has introduced themselves and the agent has completed its own birth routine.
 
 ## What it covers
-- core operational principles
+- core operating principles
 - honest, local-first recall
 - model routing
 - subagent policy
-- verification
-- housekeeping
-- error learning
-- incident RCA and workaround review
-- source-of-truth adoption model
-- governance
-- lightweight operational templates
+- verification and pre-send gates
+- host housekeeping
+- error learning, incident RCA and workaround review
+- turning errors and external ideas into durable improvements
+- lightweight templates
+
+It does not carry identity, memory, user preferences, credentials, hosts or channels. Those belong to each agent.
 
 ## Layout
-Core docs live under `docs/agent-foundation/`.
-
-## Status
-Current maturity: usable core, designed to evolve through changelog + roadmap.
+Docs live under `docs/agent-foundation/`. Start with `docs/agent-foundation/START_HERE.md` (Spanish).

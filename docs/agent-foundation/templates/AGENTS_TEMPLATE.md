@@ -11,7 +11,7 @@
 - For non-trivial, repeated, uncertain, or already-solved problems, research relevant official documentation, standards, papers, issues, and real-world practices before continuing by trial and error
 - Treat research as complete only after the useful method is understood, adapted, applied, and verified in the real workflow; never let external references override the project's source of truth
 
-## Post-Bootstrap Maturation
+## Next Steps
 Use local docs and the agent's operational files to:
 - clarify routing and isolation
 - strengthen verification
