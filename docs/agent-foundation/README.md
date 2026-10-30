@@ -12,10 +12,6 @@ Doctrina general y reusable para agentes de OpenClaw. Se aplica justo después d
 - continuidad ligera por topic/proyecto
 - cómo convertir errores e ideas externas en mejoras durables
 
-## Qué no cubre
-- Identidad, memoria, preferencias del usuario, credenciales, hosts, rutas y canales. Eso es de cada agente.
-- Lo que OpenClaw ya hace de serie (recall de memoria, preflight de soluciones existentes, mantenimiento de memoria, updates y supervisión del gateway, plantillas de roles). El Foundation solo añade lo que falta encima.
-
 ## Estructura
 - `START_HERE.md` — cómo aplicarlo a un agente, paso a paso
 - `CORE_PRINCIPLES.md` — filosofía operativa

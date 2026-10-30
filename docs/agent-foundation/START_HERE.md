@@ -8,7 +8,7 @@ Primero, dejar que el agente nazca solo:
 - OpenClaw instalado y al menos un modelo funcionando
 - el usuario se presenta y el agente completa su rutina nativa de bootstrap (identidad, usuario, workspace)
 
-Justo después, aplicar el Foundation. No hace falta esperar a que el agente "madure": cuanto antes entren estas reglas, menos hábitos malos hay que corregir después.
+Justo después, aplicar el Foundation: cuanto antes entren estas reglas, menos hábitos hay que corregir.
 
 ## Paso 1 — Leer la base
 - `README.md`
@@ -19,7 +19,6 @@ Justo después, aplicar el Foundation. No hace falta esperar a que el agente "ma
 Partir de `templates/AGENTS_TEMPLATE.md` y fusionarlo con el `AGENTS.md` existente del agente:
 - conservar identidad, tono y reglas propias que ya tenga
 - añadir las reglas operativas que falten
-- no duplicar lo que el runtime de OpenClaw ya hace de serie
 
 ## Paso 3 — Aterrizar en el entorno real
 Con `MODEL_ROUTING.md`, `SUBAGENT_POLICY.md` y `ROUTING_AND_ISOLATION.md`, dejar escrito en archivos del workspace:
@@ -60,6 +59,4 @@ Cuando el Foundation cambie:
 4. adaptar sus archivos locales (`AGENTS.md`, skills, scripts)
 
 ## Regla
-Aplicar el Foundation no rehace el nacimiento del agente: lo que dejó el bootstrap (identidad, tono, datos del usuario) se respeta.
-
-El Foundation aporta doctrina general. Identidad, memoria, preferencias del usuario, credenciales, hosts, rutas y canales son de cada agente y no vienen de aquí.
+Lo que dejó el bootstrap (identidad, tono, datos del usuario) se respeta. El Foundation aporta doctrina general; identidad, memoria, credenciales, hosts, rutas y canales son propios de cada agente.

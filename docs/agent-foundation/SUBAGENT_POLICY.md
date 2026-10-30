@@ -29,8 +29,7 @@ Delegar solo cuando el beneficio en foco, aislamiento o paralelismo supera el co
 - cuando el subagente necesitaría volver cada dos minutos a pedir microdecisiones
 
 ## Roles
-Partir de las plantillas de roles nativas de OpenClaw. No crear un agente
-separado si no aporta herramientas, contexto o permisos distintos; el triage
+Pocos roles, cada uno con herramientas, contexto o permisos propios. El triage
 mecánico pertenece al router determinista/main.
 
 ## Reglas maduras
