@@ -1,8 +1,6 @@
 # Agent Foundation
 
-Mejoras probadas para agentes de OpenClaw.
-
-Cuándo: justo después del bootstrap, cuando el usuario se ha presentado y el agente ha completado su rutina de nacimiento. Lo que dejó el bootstrap (identidad, tono, datos del usuario) se respeta.
+Mejoras probadas para agentes de OpenClaw, adoptables por cualquier agente: desde uno recién nacido tras el bootstrap hasta uno con tiempo en marcha.
 
 Adopción: leer cada doc, adoptar las mejoras que encajen con tu entorno y comprobarlas con su línea `Verificar`. Cuando cambie, leer `CHANGELOG.md` y adoptar lo nuevo.
 
