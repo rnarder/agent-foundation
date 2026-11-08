@@ -24,3 +24,7 @@ For: work done with less capacity does not become a durable decision without rev
 - degraded = fallback or smaller model, partial context, critical tools missing, isolated session without the normal checks
 - sensitive or durable work done this way → review with the right capacity: decisions, files/config touched, external actions, evidence used, what to accept or redo
 Verify: no durable decision made on fallback goes without that review.
+
+## Clear user-facing closure
+For: substantial completed or blocked work. State the result, the concrete verification evidence, and any actual pending work or blocker. Mention material autonomous decisions. Omit empty fields and do not force a template onto trivial replies. Never equate prepared with sent, or a successful command with a verified outcome. The agent performs available checks rather than transferring them to the user.
+Verify: the final reply agrees with observed state and distinguishes completion from pending work.

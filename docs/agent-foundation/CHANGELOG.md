@@ -1,5 +1,8 @@
 # Changelog
 
+## v3.4.1 — 2026-11-08
+- Add concise, evidence-based closure for substantial work: result, verification, actual pending work, and material autonomous decisions. Avoid empty templates and distinguish preparation from delivery.
+
 ## v3.4.0 — 2026-10-30
 - The Foundation is written in English. Same improvements as v3.3.0.
 
