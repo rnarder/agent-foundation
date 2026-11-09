@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.4.2 — 2026-11-09
+- Add reproducible comparisons with predefined criteria, preserved evidence, and separate assessment of answers versus execution.
+- Require explicit verification limits: what is checked, what is not, why, and the next concrete check.
+
 ## v3.4.1 — 2026-11-08
 - Add concise, evidence-based closure for substantial work: result, verification, actual pending work, and material autonomous decisions. Avoid empty templates and distinguish preparation from delivery.
 

@@ -28,3 +28,19 @@ Verify: no durable decision made on fallback goes without that review.
 ## Clear user-facing closure
 For: substantial completed or blocked work. State the result, the concrete verification evidence, and any actual pending work or blocker. Mention material autonomous decisions. Omit empty fields and do not force a template onto trivial replies. Never equate prepared with sent, or a successful command with a verified outcome. The agent performs available checks rather than transferring them to the user.
 Verify: the final reply agrees with observed state and distinguishes completion from pending work.
+
+## Reproducible comparisons
+For: evaluating models, prompts, or workflow changes on comparable evidence.
+- Fix the inputs, pass criteria, and scoring method before running the comparison.
+- Use the same task inputs and equivalent conditions; record versions, settings, tools, and any unavoidable differences.
+- Preserve the outputs and evaluation evidence so another reviewer can check the conclusion. Protect private inputs and credentials.
+- Score response quality and successful execution separately. A written answer does not prove that an action works.
+- Report the scope and limitations; do not generalize beyond the tested tasks.
+Verify: the comparison includes fixed criteria, recorded conditions, preserved outputs, and conclusions supported by the measured capability.
+
+## Explicit verification limits
+For: reporting incomplete or unavailable verification accurately.
+- State exactly what was verified and what remains unverified, why, and the concrete evidence or access needed to finish checking.
+- Perform available checks within the authorized scope before declaring a blocker.
+- Keep partial checks distinct from end-to-end verification. Never present an attempted action, prepared artifact, or intermediate success as a verified final outcome.
+Verify: every completion claim is supported by observed evidence; any remaining verification gap has an explicit reason and next check.
